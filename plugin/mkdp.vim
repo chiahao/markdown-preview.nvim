@@ -21,6 +21,12 @@ if !exists('g:mkdp_refresh_slow')
   let g:mkdp_refresh_slow = 0
 endif
 
+" set to 1, the vim will not refresh markdown on CursorHold events,
+" default 0 keeps the original auto refresh behavior.
+if !exists('g:mkdp_disable_cursor_hold_refresh')
+  let g:mkdp_disable_cursor_hold_refresh = 0
+endif
+
 " set to 1, the MarkdownPreview command can be use for all files,
 " by default it just can be use in markdown file
 if !exists('g:mkdp_command_for_global')

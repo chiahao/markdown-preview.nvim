@@ -146,6 +146,12 @@ let g:mkdp_auto_close = 1
 " default: 0
 let g:mkdp_refresh_slow = 0
 
+" set to 1, Vim will not refresh Markdown on CursorHold events.
+" This keeps refresh on cursor movement, buffer save, and leaving insert mode,
+" while preventing an idle cursor from pulling the browser scroll position back.
+" default: 0
+let g:mkdp_disable_cursor_hold_refresh = 0
+
 " set to 1, the MarkdownPreview command can be used for all files,
 " by default it can be use in Markdown files only
 " default: 0
